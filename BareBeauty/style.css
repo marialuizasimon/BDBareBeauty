@@ -1,0 +1,1093 @@
+/* Geral */
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@300;400;500&display=swap');
+
+:root {
+    --lilas: #E3CBFF;
+    --roxo: #6C3B91;
+    --roxo-escuro: #522586;
+    --creme: #FFEEBC;
+    --fundo: #FAFAFA;
+    --texto: #4B3E3E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Menu */
+
+.navbar {
+    background-color: #DEC9FA;
+    padding: 6px 0;
+    border-bottom: none;
+}
+
+.logo {
+    width: 95px;
+    height: auto;
+}
+
+.nav-link {
+    color: var(--texto);
+    font-size: 13px;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--roxo);
+}
+
+.icone-menu {
+    color: var(--roxo);
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.icone-menu:hover {
+    color: var(--roxo-escuro);
+}
+
+/* Carousel */
+
+.carousel-item {
+    height: 500px;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Camada suave sobre a imagem */
+
+.carousel-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(227, 203, 255, 0.20);
+}
+
+/* Texto */
+
+.carousel-caption {
+    position: absolute;
+    z-index: 2;
+    left: 12%;
+    right: auto;
+    bottom: 20%;
+    text-align: left;
+    max-width: 500px;
+}
+
+.carousel-caption p {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: var(--roxo);
+    margin-bottom: 15px;
+}
+
+.carousel-caption h1 {
+    font-family: 'Marcellus', serif;
+    font-size: 52px;
+    line-height: 1.05;
+    color: var(--roxo-escuro);
+}
+
+.carousel-caption h1 em {
+    font-weight: normal;
+}
+
+.carousel-caption span {
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: var(--texto);
+}
+
+/* Botão */
+
+.btn-bare {
+    border: 1px solid var(--roxo);
+    color: var(--roxo);
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-bare:hover {
+    background-color: var(--roxo);
+    color: white;
+}
+
+/* Serviços */
+
+.servicos {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.titulo p {
+    color: var(--roxo);
+    letter-spacing: 4px;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.titulo h2 {
+    font-family: 'Marcellus', serif;
+    font-size: 32px;
+    color: var(--roxo-escuro);
+}
+
+/* Cards */
+
+.card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #F7F0FC;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(82, 37, 134, 0.10);
+}
+
+.card-img-top {
+    height: 210px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card-body i {
+    color: var(--roxo);
+    font-size: 20px;
+}
+
+.card h3 {
+    font-family: 'Marcellus', serif;
+    color: var(--roxo-escuro);
+    font-size: 22px;
+    margin-top: 12px;
+}
+
+.card p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #6b6060;
+}
+
+.preco {
+    display: block;
+    color: var(--roxo);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card a {
+    color: var(--roxo);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Sobre */
+
+.sobre {
+    width: 100%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    background-image: url("images/Sobre.png");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Camada suave para destacar o texto */
+
+.sobre::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.78),
+        rgba(255, 255, 255, 0.30),
+        transparent
+    );
+    z-index: 1;
+}
+
+/* Conteúdo do texto */
+
+.conteudo-sobre {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 12%;
+    transform: translateY(-50%);
+    max-width: 500px;
+    text-align: left;
+}
+
+.titulo-pequeno {
+    color: var(--roxo);
+    letter-spacing: 3px;
+    font-size: 11px;
+    margin-bottom: 10px;
+}
+
+.sobre h2 {
+    font-family: 'Marcellus', serif;
+    color: var(--roxo-escuro);
+    font-size: 38px;
+    line-height: 1.15;
+    margin: 15px 0;
+}
+
+.sobre p {
+    max-width: 450px;
+    line-height: 1.8;
+    font-size: 14px;
+    color: var(--texto);
+}
+
+.link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--roxo);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.link:hover {
+    color: var(--roxo-escuro);
+    text-decoration: underline;
+}
+
+/* Página de serviço */
+
+.pagina-servico {
+    padding: 90px 0;
+    background-color: #FAFAFA;
+    min-height: 560px;
+}
+
+.conteudo-servico {
+    padding-left: 8%;
+}
+
+.conteudo-servico h1 {
+    font-family: 'Marcellus', serif;
+    color: var(--roxo-escuro);
+    font-size: 56px;
+    line-height: 1.05;
+    margin: 15px 0 25px;
+}
+
+.descricao-servico {
+    max-width: 450px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--texto);
+    margin-bottom: 20px;
+}
+
+/* Imagem principal do serviço */
+
+.pagina-servico .imagem-servico {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* Detalhes do serviço */
+
+.beneficios-servico {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.beneficio {
+    text-align: center;
+    padding: 30px 20px;
+    transition: 0.3s;
+}
+
+.beneficio:hover {
+    transform: translateY(-5px);
+}
+
+.beneficio i {
+    color: var(--roxo);
+    font-size: 28px;
+}
+
+.beneficio h3 {
+    font-family: 'Marcellus', serif;
+    color: var(--roxo-escuro);
+    font-size: 21px;
+    margin: 15px 0 10px;
+}
+
+.beneficio p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #6b6060;
+    max-width: 280px;
+    margin: auto;
+}
+
+/* Imagens do serviço*/
+
+.imagens-servico {
+    padding: 80px 0;
+    background-color: #F7F0FC;
+}
+
+.imagens-servico .imagem-servico {
+    width: 380px;
+    max-width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+}
+
+/* Fotos usadas na seção "Um momento para você" */
+
+.depoimentos-servico .imagem-servico {
+    width: 380px;
+    max-width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    margin: auto;
+}
+
+/* Vídeo do serviço */
+
+.video-servico {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.video-servico iframe {
+    width: 100%;
+    max-width: 1000px;
+    height: 560px;
+    display: block;
+    margin: auto;
+    border: none;
+}
+
+/* Depoimentos do serviço */
+
+.depoimentos-servico {
+    padding: 80px 0;
+    background-color: #F7F0FC;
+}
+
+.depoimento {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    height: 100%;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.depoimento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(82, 37, 134, 0.10);
+}
+
+.estrelas {
+    color: #ffdc73;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.depoimento p {
+    font-size: 13px;
+    line-height: 1.8;
+    color: #6b6060;
+    margin-bottom: 20px;
+}
+
+.depoimento span {
+    color: var(--roxo-escuro);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.foto-depoimento {
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+    border: 3px solid #E3CBFF;
+}
+
+/* Página do Assistente IA */
+
+.pagina-ia {
+    padding: 85px 0;
+    background-color: #FAFAFA;
+    min-height: 570px;
+}
+
+.conteudo-ia {
+    padding-left: 8%;
+}
+
+.conteudo-ia h1 {
+    font-family: 'Marcellus', serif;
+    color: var(--roxo-escuro);
+    font-size: 48px;
+    line-height: 1.15;
+    margin: 15px 0 25px;
+}
+
+.conteudo-ia p:not(.titulo-pequeno) {
+    max-width: 450px;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Chat */
+
+.preview-ia {
+    width: 90%;
+    max-width: 480px;
+    margin: auto;
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(82, 37, 134, 0.12);
+}
+
+.cabecalho-chat {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 22px;
+    background-color: #DEC9FA;
+}
+
+.icone-ia {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--roxo);
+    font-size: 19px;
+}
+
+.cabecalho-chat strong {
+    display: block;
+    color: var(--roxo-escuro);
+    font-size: 14px;
+}
+
+.cabecalho-chat small {
+    color: var(--texto);
+    font-size: 10px;
+}
+
+.status-ia {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #A6C98B;
+    margin-left: auto;
+}
+
+.mensagens-chat {
+    padding: 25px 20px;
+    min-height: 300px;
+    background-color: #FCF9FF;
+}
+
+.mensagem {
+    max-width: 75%;
+    padding: 11px 15px;
+    border-radius: 14px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.mensagem.usuario {
+    margin-left: auto;
+    background-color: #E3CBFF;
+    color: var(--texto);
+    border-bottom-right-radius: 4px;
+}
+
+.mensagem.ia {
+    background-color: white;
+    color: var(--texto);
+    border-bottom-left-radius: 4px;
+    box-shadow: 0 3px 10px rgba(82, 37, 134, 0.06);
+}
+
+.campo-chat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+    color: #aaa;
+    font-size: 11px;
+}
+
+.campo-chat i {
+    color: var(--roxo);
+    font-size: 16px;
+}
+
+/* Como funciona */
+
+.como-funciona-ia {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.passo-ia {
+    text-align: center;
+    padding: 25px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.passo-ia:hover {
+    transform: translateY(-5px);
+}
+
+.numero-ia {
+    font-family: 'Marcellus', serif;
+    color: #D8BDF5;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.passo-ia i {
+    color: var(--roxo);
+    font-size: 25px;
+}
+
+.passo-ia h3 {
+    font-family: 'Marcellus', serif;
+    color: var(--roxo-escuro);
+    font-size: 21px;
+    margin: 15px 0 10px;
+}
+
+.passo-ia p {
+    max-width: 280px;
+    margin: auto;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #6b6060;
+}
+
+/* Perguntas */
+
+.perguntas-ia {
+    padding: 80px 0;
+    background-color: #F7F0FC;
+}
+
+.perguntas-lista {
+    max-width: 700px;
+    margin: auto;
+}
+
+.pergunta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    padding: 18px 22px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    color: var(--texto);
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.pergunta:hover {
+    transform: translateX(5px);
+}
+
+.pergunta i {
+    color: var(--roxo);
+    font-size: 18px;
+}
+
+/* Aviso */
+
+.aviso-ia {
+    padding: 35px 0;
+    background-color: #FFF9E8;
+}
+
+.aviso-conteudo {
+    max-width: 850px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.aviso-conteudo > i {
+    color: var(--roxo);
+    font-size: 22px;
+}
+
+.aviso-conteudo h3 {
+    font-family: 'Marcellus', serif;
+    color: var(--roxo-escuro);
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.aviso-conteudo p {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--texto);
+}
+
+/* Página de depoimentos */
+
+.cabecalho-depoimentos {
+    padding: 80px 0 60px;
+    background-color: #FAFAFA;
+}
+
+.cabecalho-depoimentos h1 {
+    font-family: 'Marcellus', serif;
+    color: var(--roxo-escuro);
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.cabecalho-depoimentos > .container > p:last-child {
+    max-width: 550px;
+    margin: auto;
+    font-size: 13px;
+    line-height: 1.8;
+    color: var(--texto);
+}
+
+.lista-depoimentos {
+    padding: 70px 0;
+    background-color: #F7F0FC;
+}
+
+.lista-depoimentos .depoimento {
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chamada-depoimentos {
+    padding: 75px 0;
+    background-color: white;
+}
+
+.chamada-depoimentos > .container > i {
+    color: var(--roxo);
+    font-size: 25px;
+}
+
+.chamada-depoimentos h2 {
+    max-width: 650px;
+    margin: 15px auto;
+    font-family: 'Marcellus', serif;
+    color: var(--roxo-escuro);
+    font-size: 28px;
+    line-height: 1.4;
+}
+
+.chamada-depoimentos p {
+    font-size: 13px;
+    color: var(--texto);
+    margin-bottom: 25px;
+}
+
+/* Página de contato */
+
+.cabecalho-contato {
+    padding: 70px 0 35px;
+    background-color: #FAFAFA;
+}
+
+.cabecalho-contato h1 {
+    font-family: 'Marcellus', serif;
+    color: var(--roxo-escuro);
+    font-size: 46px;
+    margin: 15px 0;
+}
+
+.cabecalho-contato > .container > p:last-child {
+    max-width: 850px;
+    margin: auto;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--texto);
+}
+
+.area-contato {
+    padding: 55px 0 80px;
+    background-color: #FAFAFA;
+}
+
+.conteudo-contato {
+    padding-right: 30px;
+}
+
+.conteudo-contato h2 {
+    font-family: 'Marcellus', serif;
+    color: var(--roxo-escuro);
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.conteudo-contato > p:not(.titulo-pequeno) {
+    max-width: 480px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: var(--texto);
+    margin-bottom: 30px;
+}
+
+.item-contato {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.item-contato > i {
+    color: var(--roxo);
+    font-size: 21px;
+    width: 25px;
+}
+
+.item-contato strong {
+    color: var(--roxo-escuro);
+    font-size: 13px;
+    margin-right: 5px;
+}
+
+.item-contato span {
+    color: var(--texto);
+    font-size: 13px;
+}
+
+.formulario-contato {
+    background-color: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(82, 37, 134, 0.07);
+}
+
+.formulario-contato label {
+    display: block;
+    color: var(--texto);
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.formulario-contato .form-control {
+    border: 1px solid #DDD5E5;
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: var(--texto);
+}
+
+.formulario-contato .form-control:focus {
+    border-color: var(--roxo);
+    box-shadow: 0 0 0 0.15rem rgba(108, 59, 145, 0.10);
+}
+
+.formulario-contato textarea {
+    resize: vertical;
+}
+
+.formulario-contato .btn-bare {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: white;
+    padding: 45px 0 25px;
+}
+
+footer h3 {
+    font-family: 'Marcellus', serif;
+    color: var(--roxo-escuro);
+}
+
+footer p {
+    font-size: 12px;
+}
+
+.redes {
+    text-align: right;
+}
+
+.redes a {
+    color: var(--roxo);
+    font-size: 19px;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: var(--roxo-escuro);
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    color: #8a8080;
+}
+
+/* Celular */
+
+@media (max-width: 768px) {
+
+    .logo {
+        width: 100px;
+    }
+
+    .nav-link {
+        margin: 5px 0;
+    }
+
+    .icone-menu {
+        display: none;
+    }
+
+    .carousel-item {
+        height: 450px;
+    }
+
+    .carousel-caption {
+        left: 10%;
+        bottom: 15%;
+        max-width: 80%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 36px;
+    }
+
+    .carousel-caption span {
+        font-size: 12px;
+    }
+
+    /* Sobre */
+
+    .sobre {
+        height: 500px;
+    }
+
+    .conteudo-sobre {
+        left: 10%;
+        max-width: 80%;
+    }
+
+    .sobre h2 {
+        font-size: 36px;
+    }
+
+    /* Rodapé */
+
+    .redes {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    /* Página do serviço */
+
+    .pagina-servico {
+        padding: 60px 0;
+    }
+
+    .conteudo-servico {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 40px;
+    }
+
+    .conteudo-servico h1 {
+        font-size: 42px;
+    }
+
+    .pagina-servico .imagem-servico {
+        height: 350px;
+    }
+
+    /* Imagens do serviço */
+
+    .imagens-servico {
+        padding: 60px 0;
+    }
+
+    .imagens-servico .imagem-servico {
+    width: 100%;
+    max-width: 380px;
+    height: 250px;
+    margin: 0 auto 20px;
+    }
+
+    .depoimentos-servico .imagem-servico {
+    width: 100%;
+    max-width: 380px;
+    height: 250px;
+    margin: 0 auto 20px;
+    }
+
+    /* Vídeo */
+
+    .video-servico {
+    padding: 80px 0;
+    background-color: white;
+    }
+
+    .video-servico iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    }
+
+    /* Depoimentos */
+
+    .depoimentos-servico {
+        padding: 60px 0;
+    }
+
+    .depoimento {
+        padding: 25px;
+    }
+
+    /* IA */
+
+    .conteudo-ia {
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-bottom: 45px;
+    }
+
+    .conteudo-ia h1 {
+        font-size: 38px;
+    }
+
+    .preview-ia {
+        width: 90%;
+    }
+
+    .mensagens-chat {
+        min-height: 260px;
+    }
+
+    .aviso-conteudo {
+        padding: 0 10%;
+    }
+
+    /* Depoimentos */
+
+    .cabecalho-depoimentos {
+        padding: 60px 0 45px;
+    }
+
+    .cabecalho-depoimentos h1 {
+        font-size: 34px;
+    }
+
+    .chamada-depoimentos h2 {
+        font-size: 24px;
+        padding: 0 15px;
+    }
+
+    /* Contato */
+
+    .cabecalho-contato {
+        padding: 55px 0 30px;
+    }
+
+    .cabecalho-contato h1 {
+        font-size: 36px;
+    }
+
+    .area-contato {
+        padding: 40px 0 60px;
+    }
+
+    .conteudo-contato {
+        padding: 0 10%;
+        margin-bottom: 35px;
+    }
+
+    .conteudo-contato h2 {
+        font-size: 32px;
+    }
+
+    .formulario-contato {
+        margin: 0 5%;
+        padding: 25px;
+    }
+}

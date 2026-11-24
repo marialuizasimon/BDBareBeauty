@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="pt-BR">
+<!-- http://localhost/phpmyadmin -->
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bare Beauty</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+
+    <body>
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img
+                        src="images/BareBeautyLogo.jpg"
+                        alt="Logo Bare Beauty"
+                        class="logo"
+                    />
+                </a>
+
+                <!-- Botão do menu no celular -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Links -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Início</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#servicos">Serviços</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="depoimentos.html"
+                                >Depoimentos</a
+                            >
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">Contato</a>
+                        </li>
+                    </ul>
+
+                    <!-- Ícone -->
+                    <a
+                        href="contato.html"
+                        class="icone-menu"
+                        aria-label="Contato"
+                    >
+                        <i class="bi bi-heart"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <!-- Carousel -->
+            <div id="inicio">
+                <div
+                    id="carouselBareBeauty"
+                    class="carousel slide"
+                    data-bs-ride="carousel"
+                >
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button
+                            type="button"
+                            data-bs-target="#carouselBareBeauty"
+                            data-bs-slide-to="0"
+                            class="active"
+                        ></button>
+
+                        <button
+                            type="button"
+                            data-bs-target="#carouselBareBeauty"
+                            data-bs-slide-to="1"
+                        ></button>
+
+                        <button
+                            type="button"
+                            data-bs-target="#carouselBareBeauty"
+                            data-bs-slide-to="2"
+                        ></button>
+                    </div>
+
+                    <!-- Slides -->
+                    <div class="carousel-inner">
+
+                        <!-- Slide um -->
+
+                        <div class="carousel-item active">
+                            <img
+                                src="images/BannerUm.jpg"
+                                class="d-block w-100"
+                                alt="Cuidados com a pele"
+                            />
+                            <div class="carousel-caption">
+                                <p>BARE BEAUTY</p>
+                                <h1>
+                                    Sua beleza,<br />
+                                    <em>naturalmente radiante.</em>
+                                </h1>
+                                <span>
+                                    Cuide da sua pele de forma leve e natural.
+                                </span>
+                                <br />
+                                <a href="#servicos" class="btn btn-bare"
+                                    >CONHEÇA OS SERVIÇOS</a
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Slide dois -->
+
+                        <div class="carousel-item">
+                            <img
+                                src="images/BannerDois.jpg"
+                                class="d-block w-100"
+                                alt="Massagem facial"
+                            />
+                            <div class="carousel-caption">
+                                <p>RELAXAMENTO</p>
+                                <h1>
+                                    Massagem<br />
+                                    <em>Facial</em>
+                                </h1>
+                                <span> Um momento para você. </span>
+                                <br />
+                                <a
+                                    href="servico-massagem.html"
+                                    class="btn btn-bare"
+                                    >SAIBA MAIS</a
+                                >
+                            </div>
+                        </div>
+
+                        <!-- Slide três -->
+
+                        <div class="carousel-item">
+                            <img
+                                src="images/BannerTres.jpg"
+                                class="d-block w-100"
+                                alt="Skincare"
+                            />
+                            <div class="carousel-caption">
+                                <p>CUIDADO</p>
+                                <h1>
+                                    Skincare<br />
+                                    <em>Essencial</em>
+                                </h1>
+                                <span> Conheça melhor a sua pele. </span>
+                                <br />
+                                <a
+                                    href="servico-skincare.html"
+                                    class="btn btn-bare"
+                                    >SAIBA MAIS</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botão anterior e botão próximo -->
+                    <button
+                        class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#carouselBareBeauty"
+                        data-bs-slide="prev"
+                    >
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button
+                        class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#carouselBareBeauty"
+                        data-bs-slide="next"
+                    >
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Serviços -->
+            <div id="servicos" class="servicos">
+                <div class="container">
+                    <!-- Título -->
+                    <div class="titulo">
+                        <p>NOSSOS SERVIÇOS</p>
+                        <h2>Cuidados para você</h2>
+                    </div>
+
+                    <!-- Cards -->
+                    <div class="row g-4">
+
+                        <!-- Card um -->
+
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <img
+                                    src="images/CardUm.png"
+                                    class="card-img-top"
+                                    alt="Massagem facial"
+                                />
+                                <div class="card-body">
+                                    <i class="bi bi-flower1"></i>
+                                    <h3>Massagem Facial</h3>
+                                    <p>
+                                        Relaxamento e autocuidado para a pele.
+                                    </p>
+                                    <span class="preco"> R$ 80,00 </span>
+                                    <a href="servico-massagem.html"
+                                        >Solicitar orçamento →</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card dois -->
+
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <img
+                                    src="images/CardDois.png"
+                                    class="card-img-top"
+                                    alt="Skincare"
+                                />
+                                <div class="card-body">
+                                    <i class="bi bi-droplet"></i>
+                                    <h3>Ritual Skincare</h3>
+                                    <p>
+                                        Cuidados essenciais para uma pele
+                                        saudável.
+                                    </p>
+                                    <span class="preco"> R$ 100,00 </span>
+                                    <a href="servico-skincare.html"
+                                        >Solicitar orçamento →</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card três -->
+
+                        <div class="col-12 col-md-4">
+                            <div class="card">
+                                <img
+                                    src="images/CardTres.png"
+                                    class="card-img-top"
+                                    alt="Skincare com inteligência artificial"
+                                />
+                                <div class="card-body">
+                                    <i class="bi bi-stars"></i>
+                                    <h3>Skincare + IA</h3>
+                                    <p>
+                                        Informações e orientações para sua
+                                        rotina.
+                                    </p>
+                                    <span class="preco"> R$ 60,00 </span>
+                                    <a href="servico-ia.html"
+                                        >Solicitar orçamento →</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sobre -->
+            <div id="sobre" class="sobre">
+                <div class="conteudo-sobre">
+                    <p class="titulo-pequeno">SOBRE A BARE BEAUTY</p>
+
+                    <h2>
+                        Beleza, ciência<br />
+                        e bem-estar.
+                    </h2>
+
+                    <p>
+                        Um espaço criado para ajudar você a conhecer melhor sua
+                        pele e seus cuidados.
+                    </p>
+
+                    <a href="sobre.html" class="link"
+                        >Conheça a Bare Beauty →</a
+                    >
+                </div>
+            </div>
+
+            <!-- Rodapé -->
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>Bare Beauty</h3>
+
+                        <p>Sua beleza, naturalmente radiante.</p>
+                    </div>
+
+                    <div class="col-md-6 redes">
+                        <!-- Instagram -->
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <!-- Tiktok -->
+
+                        <a href="#" aria-label="TikTok">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+
+                        <!-- Whatsapp -->
+
+                        <a
+                            href="https://wa.me/5549988104770"
+                            target="_blank"
+                            aria-label="WhatsApp"
+                        >
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <hr />
+
+                <p class="copyright">
+                    © 2026 Bare Beauty | Desenvolvido por Maria Luiza Simon e
+                    Nicoli Hartmann Segalin
+                </p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+
+</html>
